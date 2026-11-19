@@ -55,10 +55,7 @@ Before running the project:
 
 1. Obtain a valid **OpenWeatherMap API key**.
 2. Configure SMTP credentials if you wish to use the email feature.
-3. **Remove hardcoded API keys and email passwords and update the script to read credentials from environment variables.** The original academic code does not yet support secure environment-based configuration.
-4. Make sure the image referenced in the startup screen is available in the expected directory, or update its path in the script.
-
-**Security note:** If the original credentials were published, revoke and rotate them. Removing secrets from the latest file alone is not sufficient: they may still remain accessible in the repository's Git history.
+3. Make sure the image referenced in the startup screen is available in the expected directory, or update its path in the script.
 
 ### 4. Run the application
 
@@ -83,7 +80,6 @@ This project is an **educational prototype**, not production-ready software:
 - The hazard-estimation model uses **sample data** and is not trained or validated for reliable predictions.
 - The script labels wind speed as `km/h`, but the API normally returns wind speed in `m/s`; a conversion is required for correct display.
 - The Tkinter window lifecycle and general code structure could benefit from refactoring.
-- API keys and email credentials must be removed from the source code **and Git history** before publicly sharing the project.
 
 ## Academic Context
 
